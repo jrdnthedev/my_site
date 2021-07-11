@@ -1,0 +1,15 @@
+{
+  "name": "my_site",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.4",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0"
+  }
+}
