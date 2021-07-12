@@ -1,4 +1,12 @@
 @import '_variables';
+@import '_header';
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
+    font-size: 16px;
+}
+.container {
+    margin: 1rem;
 }

@@ -1,7 +1,52 @@
+/******************************************/
+/**********   Breakpoints   ***************/
+/******************************************/
 h1 {
-  font-size: 4rem;
+  font-size: 8rem;
+  font-family: "serif";
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+p.headline {
+  font-size: 2rem;
+  font-style: italic;
+  color: #ecf0f1;
+}
+
+/******************************************/
+/**********     Text Mods   ***************/
+/******************************************/
+.center-align {
+  text-align: center;
+}
+
+header {
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+}
+header h1 {
+  margin: 0;
+}
+header p.headline-intro {
+  padding: 0.25rem 1rem;
+  background-color: #c0392b;
+  margin: 0;
+}
+header-wrapper {
+  margin: 0 3rem;
+  padding: 0.5rem 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  margin: 1rem;
 }

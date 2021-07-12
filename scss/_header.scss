@@ -1,0 +1,16 @@
+header {
+    border-top: .2rem solid black;
+    border-bottom: .2rem solid black;
+    h1 {
+        margin: 0;
+    }
+    p.headline-intro {
+        padding: 0.25rem 1rem;
+        background-color: $alternate;
+        margin: 0;
+    }
+    &-wrapper {
+        margin: 0 3rem;
+        padding: .5rem 0;
+    }
+}
