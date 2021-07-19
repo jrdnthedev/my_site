@@ -1,5 +1,7 @@
+@import '_mixins';
 @import '_variables';
 @import '_header';
+
 * {
     box-sizing: border-box;
 }
@@ -9,4 +11,19 @@ body {
 }
 .container {
     margin: 1rem;
+}
+
+.main-container {
+    display: flex;
+    main {
+        flex: 1;
+        flex-direction: column;
+        padding: 0 .5rem;
+         img {
+             width: 100%;
+         }
+    }
+    aside {
+        padding: 0 .5rem;
+    }
 }

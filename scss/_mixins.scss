@@ -1,0 +1,19 @@
+/******************************************/
+/**********   Breakpoints   ***************/
+/******************************************/
+
+@mixin mobile-plus2 {
+    @media (min-width: 480px) { @content; }
+}
+@mixin mobile-plus {
+    @media (min-width: 560px) { @content; }
+}
+@mixin tablet {
+    @media (min-width: 768px) { @content; }
+}
+@mixin small-desktop {
+    @media (min-width: 992px) { @content; }
+}
+@mixin large-desktop {
+    @media (min-width: 1200px) { @content; }
+}

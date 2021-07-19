@@ -1,25 +1,32 @@
 $alternate: #c0392b;
 $off-white: #ecf0f1;
 
-/******************************************/
-/**********   Breakpoints   ***************/
-/******************************************/
-$mobile-plus:480px;
-$tablet:768px;
-$small-desktop: 992px;
-$large-desktop:1200px;
-
 h1 {
-    font-size: 8rem;
+    font-size: 2.5rem;
     font-family: 'serif';
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+    @include mobile-plus {    
+        font-size: 3rem;
+    }
+    @include tablet {    
+        font-size: 4rem;
+    }
+    @include small-desktop {    
+        font-size: 5.5rem;
+    }
+    @include large-desktop {    
+        font-size: 6.5rem;
+    }
 }
 
 p.headline {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: $off-white;
+    @include mobile-plus {    
+        font-size: 2rem;
+    }
 }
 /******************************************/
 /**********     Text Mods   ***************/
@@ -27,10 +34,4 @@ p.headline {
 
 .center-align {
     text-align: center;
-}
-
-@include Breakpoint($large-desktop) {
-    h1 {
-        font-size: 13rem;
-    }
 }
