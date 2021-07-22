@@ -8,12 +8,12 @@
     "sass": "^1.35.2"
   },
   "devDependencies": {
-    "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker#v8.0.1",
     "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
-    "postcss": "^8.3.5"
+    "postcss": "^8.3.5",
+    "postcss-combine-media-query": "^1.0.1"
   }
 }
