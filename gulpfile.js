@@ -21,14 +21,6 @@ function compileSass() {
  .pipe(browserSync.stream());
 }
 
-function css() {
-  return src('css/main.css')
-  .pipe(postcss([
-    combineMediaQuery()
-    ]))
-  .pipe(dest('css'))
-}
-
 function watchHtml() {
   return src('index.html')
   .pipe(browserSync.stream());
@@ -37,6 +29,5 @@ function watchHtml() {
 exports.default = function(){
     //compile and watch
     watch('scss/*.scss',compileSass);
-    // watch('css/main.css',css);
     watch('index.html',watchHtml);
 };
