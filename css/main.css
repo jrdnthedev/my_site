@@ -65,6 +65,7 @@ body {
 .main-container aside {
   padding: 0 0.5rem;
   flex: 1;
+  border-left: 0.15rem solid #000;
 }
 @media (min-width: 560px) {
   h1 {
