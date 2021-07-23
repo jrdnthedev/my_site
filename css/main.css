@@ -8,10 +8,8 @@ h1 {
   text-transform: uppercase;
 }
 
-p.headline {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #ecf0f1;
+p {
+  margin: 0;
 }
 
 /******************************************/
@@ -38,6 +36,26 @@ header-wrapper {
   padding: 0.5rem 0px;
 }
 
+p.headline {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ecf0f1;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+figure img {
+  width: 100%;
+  border-left: 0.5rem solid #c0392b;
+}
+figure figcaption {
+  margin: 1rem 0 0;
+}
+figure figcaption p {
+  font-family: sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -55,15 +73,22 @@ body {
   display: flex;
 }
 .main-container main {
-  flex: 2;
+  flex: 3;
   flex-direction: column;
   padding: 0 0.5rem;
 }
 .main-container main img {
   width: 100%;
 }
+.main-container main .main-image-container {
+  margin: 0 0 1rem;
+}
+.main-container main .main-section-content > div {
+  flex: 1;
+  flex-direction: row;
+}
 .main-container aside {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   flex: 1;
   border-left: 0.15rem solid #000;
 }
@@ -83,6 +108,13 @@ body {
 @media (min-width: 992px) {
   h1 {
     font-size: 5.5rem;
+  }
+  .main-container main .main-section-content {
+    display: flex;
+  }
+  .main-container main .main-section-content > div {
+    flex-direction: column;
+    padding-right: 0.5rem;
   }
 }
 @media (min-width: 1200px) {

@@ -1,0 +1,22 @@
+p.headline {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: $off-white;
+    @include mobile-plus {    
+        font-size: 2rem;
+    }
+}
+
+figure {
+    margin: 0 0 1rem;
+    img {
+        width:100%;
+        border-left: .5rem solid $alternate;
+    }
+    figcaption {
+        margin: 1rem 0 0;
+        p {
+            font-family: sans-serif;
+        }
+    }
+}

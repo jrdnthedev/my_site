@@ -20,14 +20,12 @@ h1 {
         font-size: 6.5rem;
     }
 }
-p.headline {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: $off-white;
-    @include mobile-plus {    
-        font-size: 2rem;
-    }
-}
+
+p {
+    margin: 0;
+} 
+
+
 /******************************************/
 /**********     Text Mods   ***************/
 /******************************************/
