@@ -56,6 +56,10 @@ figure figcaption p {
   font-family: sans-serif;
 }
 
+footer {
+  border-top: 0.15rem solid #000;
+}
+
 * {
   box-sizing: border-box;
 }
