@@ -87,9 +87,13 @@ body {
 .main-container main .main-image-container {
   margin: 0 0 1rem;
 }
+.main-container main .main-section-content {
+  margin-bottom: 1rem;
+}
 .main-container main .main-section-content > div {
   flex: 1;
   flex-direction: row;
+  margin-bottom: 1rem;
 }
 .main-container aside {
   padding: 0 1rem;
@@ -116,9 +120,13 @@ body {
   .main-container main .main-section-content {
     display: flex;
   }
+  .main-container main .main-section-content:last-child {
+    margin-bottom: 0;
+  }
   .main-container main .main-section-content > div {
     flex-direction: column;
     padding-right: 0.5rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
