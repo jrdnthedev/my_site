@@ -5,12 +5,12 @@ header {
         margin: 0;
     }
     p.headline-intro {
-        padding: 0.25rem 1rem;
+        padding: $quarter $standard;
         background-color: $alternate;
         margin: 0;
     }
     &-wrapper {
         margin: 0 3rem;
-        padding: .5rem 0px;
+        padding: $half 0px;
     }
 }

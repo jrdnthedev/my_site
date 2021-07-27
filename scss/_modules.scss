@@ -3,20 +3,26 @@ p.headline {
     font-style: italic;
     color: $off-white;
     @include mobile-plus {    
-        font-size: 2rem;
+        font-size: $standard * 2;
     }
 }
 
 figure {
-    margin: 0 0 1rem;
+    margin: 0 0 $standard;
     img {
         width:100%;
-        border-left: .5rem solid $alternate;
+        border-left: $half solid $alternate;
     }
     figcaption {
-        margin: 1rem 0 0;
-        p {
-            font-family: sans-serif;
-        }
+        margin: $standard 0 0;
+    }
+}
+
+.caption-block {
+    margin-bottom: $standard * 2;
+    .caption-heading {
+        font-size: $standard * 2;
+        font-weight: bold;
+        margin-bottom: $half;
     }
 }

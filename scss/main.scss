@@ -10,28 +10,34 @@
 body {
     margin: 0;
     font-size: 16px;
+    font-family: sans-serif;
 }
 .container {
-    margin: 1rem;
+    margin: $standard;
 }
 
 .main-container {
     display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
     main {
         flex: 3;
         flex-direction: column;
-        padding: 0 .5rem;
+        padding: 0 $half;
          img {
              width: 100%;
+             margin-bottom: $half;
          }
          .main-image-container {
-            margin: 0 0 1rem;
+            margin: 0 0 $standard;
          }
          .main-section-content {   
             @include small-desktop {
                 display: flex;
             }
-            margin-bottom: 1rem;
+            margin-bottom: $standard;
             &:last-child {
                 @include small-desktop {
                     margin-bottom: 0;
@@ -40,10 +46,13 @@ body {
             & > div {
                 flex: 1;
                 flex-direction: row;
-                margin-bottom: 1rem; 
+                margin-bottom: $standard;
+                p {
+                    margin-bottom: $half;
+                } 
                 @include small-desktop {
                     flex-direction: column;
-                    padding-right: .5rem;
+                    padding-right: $half;
                     margin-bottom: 0; 
                 } 
             }
@@ -51,8 +60,11 @@ body {
     }
     
     aside {
-        padding: 0 1rem;
+        padding: 0 $half;
         flex: 1;
-        border-left: 0.15rem solid $primary;
+        @include tablet {
+            padding: 0 $standard;
+            border-left: 0.15rem solid $primary;
+        }
     }
 }
