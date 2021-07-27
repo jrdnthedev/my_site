@@ -49,6 +49,7 @@ body {
                 margin-bottom: $standard;
                 p {
                     margin-bottom: $half;
+                    line-height: 24px;
                 } 
                 @include small-desktop {
                     flex-direction: column;

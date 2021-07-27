@@ -51,13 +51,15 @@ figure img {
 }
 figure figcaption {
   margin: 1rem 0 0;
+  line-height: 24px;
 }
 
 .caption-block {
   margin-bottom: 2rem;
+  line-height: 24px;
 }
 .caption-block .caption-heading {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -107,6 +109,7 @@ body {
 }
 .main-container main .main-section-content > div p {
   margin-bottom: 0.5rem;
+  line-height: 24px;
 }
 .main-container aside {
   padding: 0 0.5rem;
@@ -135,6 +138,9 @@ body {
 @media (min-width: 992px) {
   h1 {
     font-size: 5.5rem;
+  }
+  .caption-block .caption-heading {
+    font-size: 1.5rem;
   }
   .main-container main .main-section-content {
     display: flex;

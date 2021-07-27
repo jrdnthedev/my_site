@@ -15,14 +15,19 @@ figure {
     }
     figcaption {
         margin: $standard 0 0;
+        line-height: 24px;
     }
 }
 
 .caption-block {
     margin-bottom: $standard * 2;
+    line-height: 24px;
     .caption-heading {
-        font-size: $standard * 2;
+        font-size: $standard * 1.25;
         font-weight: bold;
         margin-bottom: $half;
+        @include small-desktop {
+            font-size: $standard * 1.5;
+        }
     }
 }
