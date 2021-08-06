@@ -61,10 +61,12 @@ body {
     }
     
     aside {
-        padding: 0 $half;
+        padding: $standard $half 0;
         flex: 1;
+        border-top: 0.15rem solid #000;
         @include tablet {
             padding: 0 $standard;
+            border-top: none;
             border-left: 0.15rem solid $primary;
         }
     }
