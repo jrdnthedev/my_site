@@ -15,7 +15,7 @@
     <div class="container">
       <header>
         <div class="header-wrapper">
-          <nav>
+          <nav role="navigation" aria-labelledby="primary-navigation">
             <span class="page_title">MoneyWise</span>
             <ul id="main_menu">
               <li><a href="#"><span data-hover="Learning">Learning</span></a></li>
@@ -36,12 +36,29 @@
       </div>
       <div class="main-container">
         <main>
-          <div class="main-image-container">
-            <img src="https://via.placeholder.com/600x300" alt="placeholder image" style="visibility: hidden;">
-            <p>Donec sapien sapien, lobortis at maximus venenatis, 
+          <div class="main-image-controls-container">
+            <div id="number_container">
+              <span>01</span>
+            </div>
+            <nav role="navigation" aria-labelledby="background-navigation">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+              <ul>
+                <li><a href="#"><span class="circle"></span></a></li>
+                <li><a href="#"><span class="circle"></span></a></li>
+                <li><a href="#"><span class="circle"></span></a></li>
+              </ul>
+            </nav>
+            <div>
+              <img src="https://via.placeholder.com/600x300" alt="placeholder image" style="visibility: hidden;">
+              <p>Donec sapien sapien, lobortis at maximus venenatis, 
               consequat sit amet erat. Aenean laoreet elementum suscipit. 
               Nulla facilisi. Proin sagittis sapien eu turpis volutpat, 
               et rhoncus nulla facilisis.</p>
+            </div>
           </div>
           <section class="main-section-content">
             <div>
@@ -102,7 +119,7 @@
               <div class="caption-heading">Lorem ipsum dolor ipsum Lorem ipsum Lorem dolor</div>
               <p>enean laoreet elementum suscipit. Nulla facilisi.</p>
               <form action="">
-                <input type="text">
+                <input type="text" placeholder="Enter Your Email Address">
                 <button>Subscribe</button>
               </form>
             </div>

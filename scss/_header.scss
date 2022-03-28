@@ -9,10 +9,12 @@ header {
         margin: 0;
     }
     .header-wrapper {
-        padding: $standard;
+        padding: $standard $standard*2;
     }
     .page_title {
-        font-size: 24px;
+        font-size: 26px;
+        font-family: serif;
+        font-weight: 600;
     }
 }
 

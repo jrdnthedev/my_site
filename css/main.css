@@ -32,10 +32,12 @@ header p.headline-intro {
   margin: 0;
 }
 header .header-wrapper {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 header .page_title {
-  font-size: 24px;
+  font-size: 26px;
+  font-family: serif;
+  font-weight: 600;
 }
 
 #main_menu {
@@ -131,7 +133,7 @@ figure figcaption {
   line-height: 24px;
 }
 .caption-block .caption-heading {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
@@ -140,9 +142,6 @@ figure figcaption {
   border: 1px solid #d1d1d1;
   background: rgba(248, 248, 248, 0.5);
   padding: 18px 12px 20px;
-}
-.card .caption-heading {
-  line-height: 33px;
 }
 .card p, .card div {
   margin-bottom: 10px;
@@ -223,6 +222,10 @@ body {
   flex: 1;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+.main-container aside div.caption-block:not(:first-child), .main-container aside figure {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 
 #main-image {
   background-size: cover;
@@ -244,6 +247,44 @@ body {
   right: 0;
   top: 20%;
   background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 0.01) 1%, #f8f8f8 100%);
+}
+
+.main-image-controls-container {
+  margin-bottom: 60px;
+  padding: 30px 16px;
+}
+.main-image-controls-container nav {
+  align-items: unset;
+}
+.main-image-controls-container nav ul {
+  padding: 0;
+  margin: 0;
+}
+.main-image-controls-container nav ul:first-child {
+  padding-right: 48px;
+}
+.main-image-controls-container nav ul:first-child li {
+  margin-bottom: 54px;
+}
+.main-image-controls-container nav ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.main-image-controls-container nav ul li .circle {
+  height: 43px;
+  width: 43px;
+}
+.main-image-controls-container nav ul li a {
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 3px;
+}
+
+#number_container {
+  margin-bottom: 32px;
+  font-size: 64px;
+  font-family: serif;
 }
 
 @media (min-width: 560px) {
@@ -281,9 +322,6 @@ body {
   }
   .sub-headline {
     font-size: 5rem;
-  }
-  .caption-block .caption-heading {
-    font-size: 1.5rem;
   }
   .main-container main .main-section-content {
     display: flex;

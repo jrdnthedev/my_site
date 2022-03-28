@@ -23,12 +23,9 @@ figure {
     margin-bottom: $standard * 2;
     line-height: 24px;
     .caption-heading {
-        font-size: $standard * 1.25;
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: $half;
-        @include small-desktop {
-            font-size: $standard * 1.5;
-        }
     }
 }
 
@@ -36,9 +33,6 @@ figure {
     border: 1px solid #d1d1d1;
     background: rgba(248,248,248,.5);
     padding: 18px 12px 20px;
-    .caption-heading {
-        line-height: 33px;
-    }
     p,div {
         margin-bottom: 10px;
     }
