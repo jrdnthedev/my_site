@@ -141,6 +141,12 @@ figure figcaption {
   background: rgba(248, 248, 248, 0.5);
   padding: 18px 12px 20px;
 }
+.card .caption-heading {
+  line-height: 33px;
+}
+.card p, .card div {
+  margin-bottom: 10px;
+}
 .card input {
   width: 100%;
   border: 1px solid #d1d1d1;
@@ -189,7 +195,7 @@ body {
   flex-direction: column;
 }
 .main-container main {
-  flex: 2.3;
+  flex: 3.5;
   flex-direction: column;
   padding: 1rem;
 }

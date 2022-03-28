@@ -36,6 +36,12 @@ figure {
     border: 1px solid #d1d1d1;
     background: rgba(248,248,248,.5);
     padding: 18px 12px 20px;
+    .caption-heading {
+        line-height: 33px;
+    }
+    p,div {
+        margin-bottom: 10px;
+    }
     input {
         width: 100%;
         border: 1px solid #d1d1d1;
