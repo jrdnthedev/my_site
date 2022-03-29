@@ -36,11 +36,11 @@ body {
          .main-image-container {
             margin: 0 0 $standard;
          }
-         .main-section-content {   
+         .main_section-content {   
             @include small-desktop {
                 display: flex;
             }
-            margin-bottom: $standard;
+            margin-bottom: 60px;
             &:last-child {
                 @include small-desktop {
                     margin-bottom: 0;
@@ -59,6 +59,42 @@ body {
                     padding-right: $half;
                     margin-bottom: 0; 
                 } 
+            }
+        }
+        .main_section-featured {
+            display: flex;
+            & > div {
+                flex: 1;
+                flex-direction: row;
+                margin-bottom: $standard;
+                @include small-desktop {
+                    flex-direction: column;
+                    padding-right: $half;
+                    margin-bottom: 0; 
+                } 
+            }
+            nav ul {
+                padding: 0 20px 0 0;
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+            }
+            #slide_container {
+                flex-direction: column;
+                #slide-content h3 {
+                    font-size: 36px;
+                }
+                span {
+                    flex: 1;
+                    vertical-align: middle;
+                    font-weight: 600;
+                }
+                #featured_controls {
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }
@@ -101,7 +137,7 @@ body {
 }
 
 .main-image-controls-container {
-    margin-bottom: 60px;
+    margin-bottom: 200px;
     padding: 30px 16px;
     display: flex;
     flex-direction: column;
@@ -152,12 +188,12 @@ body {
     
     h3 {
         font-family: serif;
-        font-size: 40px;
+        font-size: 48px;
         margin: 0;
-        line-height: 44px;
+        line-height: 45px;
         font-weight: 500;
         margin-bottom: 20px;
-        width: 300px;
+        width: 500px;
     }
     #author_information {
         margin-bottom: 20px;
@@ -182,11 +218,12 @@ body {
         font-size: 12px;
     }
     #headline_wrapper{
-        width: 300px;
+        width: 350px;
         #slide_content-healdine {
             border-bottom: 3px solid #780095;
             font-size: 20px;
             font-weight: 500;
+            line-height: 29px;
         }
     }
 }
