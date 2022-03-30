@@ -39,6 +39,12 @@ body {
          .main_section-content {   
             @include small-desktop {
                 display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 800px;
+                &.quad {
+                    max-width:none;
+                }
             }
             margin-bottom: 60px;
             &:last-child {
@@ -56,13 +62,38 @@ body {
                 } 
                 @include small-desktop {
                     flex-direction: column;
-                    padding-right: $half;
+                    padding-right: 14px;
                     margin-bottom: 0; 
                 } 
+            }
+
+            figure figcaption{
+                h4 {
+                    font-family: serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 27px;
+                    margin: 0;
+                }
+                .article_information {
+                    .author_link {
+                        font-size: 10px;
+                        text-decoration: none;
+                        color: #6a6a6a;
+                        &:hover {
+                            color: #780095;
+                            transition: .5s ease;
+                        }
+                    }
+                    time {
+                        font-size: 10px;
+                    }
+                }
             }
         }
         .main_section-featured {
             display: flex;
+            margin-bottom: 60px;
             & > div {
                 flex: 1;
                 flex-direction: row;
@@ -115,6 +146,12 @@ body {
     }
 }
 
+.figure_img {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #main-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,4 +273,31 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin: 0 12px;
+}
+
+.banner {
+    height: 87px;
+    background-color: #50e3c2;
+}
+
+.quote_block {
+    position: relative;
+    padding-left: 52px;
+    padding-top: 15px;
+    width: 700px;
+    margin: 0 auto 60px;
+   p {
+    font-size: 34px;
+    font-family: serif;
+    font-style: italic;
+    line-height: 41px;
+    &::before {
+        content: "\201C";
+        font: 120px/1 "Prata",sans-serif;
+        color: #780095;
+        position: absolute;
+        top: -5px;
+        left: 0;
+    }
+   }
 }
