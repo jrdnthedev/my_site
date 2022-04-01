@@ -40,6 +40,24 @@ figure {
     background: linear-gradient(to bottom,rgba(248,248,248,0) 0%,rgba(248,248,248,0.01) 1%,#f8f8f8 100%);
 }
 
+#learning {
+    #slide_container {
+        display: block;
+        flex-direction: unset;
+    }
+    .main-image-controls-container{
+        display: block;
+        flex-direction: unset;
+        margin-top: 150px;
+        text-align: center;
+        
+        h3,#slide_content #headline_wrapper {
+            width: auto;
+            max-width: initial;
+        }
+    }
+}
+
 .main-image-controls-container {
     margin-bottom: 200px;
     padding: 30px 16px;
@@ -86,7 +104,7 @@ figure {
 #slide_container {
     flex-direction: row;
     display: flex;
-    nav {
+    nav#background_nav {
         display: none;
         @include small-desktop {
             display: flex;
@@ -131,7 +149,7 @@ figure {
         font-size: 12px;
     }
     #headline_wrapper{
-        width: 350px;
+        max-width: 350px;
         #slide_content-healdine {
             border-bottom: 3px solid #780095;
             font-size: 20px;

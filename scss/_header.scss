@@ -10,6 +10,9 @@ header {
     }
     .header-wrapper {
         padding: $standard $standard*2;
+        @include max-tablet {
+            background-color: white;
+        }
     }
     .page_title {
         font-size: 26px;
@@ -20,9 +23,27 @@ header {
 
 #main_menu {
     display: inline-block;
-        flex: 1;
+    flex: 1;
+    background-color: inherit;
+    @include max-tablet {
+        display: none;
+        &.active {
+            display: block;
+            top: 57px;
+            left: 10px;
+            right: 10px;
+            position: fixed;
+            background: white;
+            padding: 0;
+        }
+    }
     li {
         display: inline-block;
+        @include max-tablet {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
     a {
         font-size: 14px;
@@ -60,6 +81,26 @@ header {
     }
 }
 
+#sticky_nav {
+    display: none;
+    &.active {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        height: 53px;
+        @include max-small-desktop {
+            height: 73px;
+        }
+    }
+    left: 10px;
+    right: 10px;
+    background: #fff;
+    height: 83px;
+    padding: 10px 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all .5s ease;
+}
 nav {
     display: flex;
     align-items: center;
