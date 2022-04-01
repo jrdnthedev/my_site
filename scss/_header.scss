@@ -18,6 +18,9 @@ header {
         font-size: 26px;
         font-family: serif;
         font-weight: 600;
+        @include max-tablet {
+            flex: 1;
+        }
     }
 }
 
@@ -107,7 +110,10 @@ nav {
 }
 
 .social_links {
-    display: inline-block;
+    @include max-tablet {
+        display: inline-block;
+    }
+    display: none;
     span {
         margin-right: 8px;
         &:last-child {

@@ -107,7 +107,7 @@ nav {
 }
 
 .social_links {
-  display: inline-block;
+  display: none;
 }
 .social_links span {
   margin-right: 8px;
@@ -569,6 +569,9 @@ p.headline {
   header .header-wrapper {
     background-color: white;
   }
+  header .page_title {
+    flex: 1;
+  }
   #main_menu {
     display: none;
   }
@@ -585,6 +588,9 @@ p.headline {
     display: block;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .social_links {
+    display: inline-block;
   }
 }
 @media (max-width: 992px){
