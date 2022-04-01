@@ -1,24 +1,4 @@
-p.headline {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: $off-white;
-    @include mobile-plus {    
-        font-size: $standard * 2;
-    }
-}
 
-figure {
-    margin: 0 0 $standard;
-    img {
-        width:100%;
-        border-left: $half solid $alternate;
-        height: 283px;
-    }
-    figcaption {
-        margin: $standard 0 0;
-        line-height: 24px;
-    }
-}
 
 .caption-block {
     margin-bottom: $standard * 2;

@@ -11,7 +11,7 @@ browserSync.init({
 });
 
 function compileSass() {
- return src('scss/main.scss')
+ return src('scss/styles.scss')
  .pipe(sass())
  .pipe(postcss([
   combineMediaQuery()

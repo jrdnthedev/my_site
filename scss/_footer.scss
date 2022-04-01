@@ -4,3 +4,33 @@ footer {
     padding: 27px;
     color: white;
 }
+
+.banner {
+    height: 87px;
+    background-color: #50e3c2;
+}
+
+.quote_block {
+    position: relative;
+    padding-left: 52px;
+    padding-top: 15px;
+    width: auto;
+    margin: 0 auto 60px;
+    @include small-desktop {
+        width: 700px;
+    }
+   p {
+    font-size: 34px;
+    font-family: serif;
+    font-style: italic;
+    line-height: 41px;
+    &::before {
+        content: "\201C";
+        font: 120px/1 "Prata",sans-serif;
+        color: #780095;
+        position: absolute;
+        top: -5px;
+        left: 0;
+    }
+   }
+}
