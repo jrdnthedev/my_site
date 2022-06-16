@@ -9,9 +9,11 @@ header {
         margin: 0;
     }
     .header-wrapper {
-        padding: $standard $standard*2;
-        @include max-tablet {
-            background-color: white;
+        nav {
+            padding: $standard $standard*2;
+            @include max-tablet {
+                background-color: white;
+            }
         }
     }
     .page_title {
@@ -32,10 +34,10 @@ header {
         display: none;
         &.active {
             display: block;
-            top: 57px;
-            left: 10px;
-            right: 10px;
-            position: fixed;
+            top: 45px;
+            left: 0;
+            right: 0;
+            position: absolute;
             background: white;
             padding: 0;
         }
@@ -87,10 +89,12 @@ header {
 #sticky_nav {
     display: none;
     &.active {
-        display: flex;
-        position: fixed;
-        top: 0px;
-        height: 53px;
+        @include tablet {
+            display: flex;
+            position: fixed;
+            top: 0px;
+            height: 53px;
+        }
         @include max-small-desktop {
             height: 73px;
         }
@@ -103,6 +107,18 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: all .5s ease;
+}
+#primary_nav {
+    &.active {
+        @include max-tablet {
+            display: flex;
+            position: fixed;
+            top: 0px;
+            right: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+    }
 }
 nav {
     display: flex;

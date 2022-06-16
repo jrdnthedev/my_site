@@ -3,12 +3,22 @@
 
     function sticky () {
         let bar = document.getElementById('sticky_nav');
+        let pm = document.getElementById('primary_nav');
 
-        if(window.scrollY >= 95 ) {
-            bar.classList.add('active')
+        if(window.innerWidth >= 767) {
+            if(window.scrollY >= 95) {
+                bar.classList.add('active')
+            } else {
+                bar.classList.remove('active');
+            }
         } else {
-            bar.classList.remove('active');
+            if(window.scrollY >= 10) {
+                pm.classList.add('active')
+            } else {
+                pm.classList.remove('active');
+            }
         }
+        
     }
 
     function toggleMenu() {
