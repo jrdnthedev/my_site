@@ -1,5 +1,8 @@
 header {
-    border-bottom: 1px solid rgba(0,0,0,.2);
+    @include max-tablet {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    
     h1 {
         margin: 0;
     }
@@ -39,7 +42,8 @@ header {
             right: 0;
             position: absolute;
             background: white;
-            padding: 0;
+            padding: 20px 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
         }
     }
     li {
@@ -109,6 +113,7 @@ header {
     transition: all .5s ease;
 }
 #primary_nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     &.active {
         @include max-tablet {
             display: flex;
@@ -138,3 +143,7 @@ nav {
     }
 }
 
+svg {
+    fill:#780095;
+    height: 23px;
+}
