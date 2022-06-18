@@ -23,6 +23,10 @@ header {
         font-size: 26px;
         font-family: serif;
         font-weight: 600;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
         @include max-tablet {
             flex: 1;
         }
@@ -33,6 +37,7 @@ header {
     display: inline-block;
     flex: 1;
     background-color: inherit;
+    margin-left: 6px;
     @include max-tablet {
         display: none;
         &.active {

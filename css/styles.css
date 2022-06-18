@@ -36,11 +36,16 @@ header .page_title {
   font-family: serif;
   font-weight: 600;
 }
+header .page_title a {
+  color: #000;
+  text-decoration: none;
+}
 
 #main_menu {
   display: inline-block;
   flex: 1;
   background-color: inherit;
+  margin-left: 6px;
 }
 #main_menu li {
   display: inline-block;
