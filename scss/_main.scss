@@ -28,7 +28,8 @@ figure {
     opacity: .4;
     z-index: -1;
     min-height: 685px;
-    background-position: center top;
+    background-position: center;
+    transition: all 1s ease;
 }
 .fadeout {
     position: absolute;
@@ -65,24 +66,26 @@ figure {
     flex-direction: column;
     nav {
         align-items: unset;
-        flex: 0 0 164px;
+        margin-right: 28px;
         ul {
             padding: 0;
             margin: 0;
-            &:first-child {
-                padding-right: 48px;
-                li {
-                    margin-bottom: 54px;
-                    padding-bottom: 6px;
-                    border-bottom: 2px solid #780095;
-                    &.active {
-                        border-bottom: 4px solid #780095;
-                    }
-                }
+
+            flex-flow: row-reverse;
+            justify-content: space-between;
+            display: flex;
+            @include small-desktop {
+                flex-flow: unset;
+                justify-content: unset;
+                display: block;
             }
             li {
                 list-style-type: none;
                 margin-bottom: 20px;
+                display: inline-block;
+                @include small-desktop {
+                    display: block;
+                }
                 .circle {
                     height: 43px;
                     width: 43px;
@@ -107,12 +110,16 @@ figure {
 }
 
 #slide_container {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
+    height: 251px;
+    @include small-desktop {
+        flex-direction: row;
+    }
     nav#background_nav {
-        display: none;
+        flex-direction: column;
         @include small-desktop {
-            display: flex;
+            display: block;
         }
     }
 }

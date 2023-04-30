@@ -118,6 +118,11 @@ nav {
 svg {
   fill: #780095;
   height: 23px;
+  transform: rotate(90deg);
+}
+
+#hamburger_menu {
+  transform: rotate(0);
 }
 
 figure {
@@ -149,7 +154,8 @@ figure figcaption {
   opacity: 0.4;
   z-index: -1;
   min-height: 685px;
-  background-position: center top;
+  background-position: center;
+  transition: all 1s ease;
 }
 
 .fadeout {
@@ -185,26 +191,19 @@ figure figcaption {
 }
 .main-image-controls-container nav {
   align-items: unset;
-  flex: 0 0 164px;
+  margin-right: 28px;
 }
 .main-image-controls-container nav ul {
   padding: 0;
   margin: 0;
-}
-.main-image-controls-container nav ul:first-child {
-  padding-right: 48px;
-}
-.main-image-controls-container nav ul:first-child li {
-  margin-bottom: 54px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #780095;
-}
-.main-image-controls-container nav ul:first-child li.active {
-  border-bottom: 4px solid #780095;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  display: flex;
 }
 .main-image-controls-container nav ul li {
   list-style-type: none;
   margin-bottom: 20px;
+  display: inline-block;
 }
 .main-image-controls-container nav ul li .circle {
   height: 43px;
@@ -225,11 +224,12 @@ figure figcaption {
 }
 
 #slide_container {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
+  height: 251px;
 }
 #slide_container nav#background_nav {
-  display: none;
+  flex-direction: column;
 }
 
 #slide_content h3 {
@@ -577,8 +577,19 @@ button:hover, a:hover {
   .sub-headline {
     font-size: 5rem;
   }
+  .main-image-controls-container nav ul {
+    flex-flow: unset;
+    justify-content: unset;
+    display: block;
+  }
+  .main-image-controls-container nav ul li {
+    display: block;
+  }
+  #slide_container {
+    flex-direction: row;
+  }
   #slide_container nav#background_nav {
-    display: flex;
+    display: block;
   }
   #slide_content h3 {
     width: 500px;
@@ -632,6 +643,8 @@ button:hover, a:hover {
   }
   #main_menu {
     display: none;
+    top: 0;
+    transition: all 1s ease;
   }
   #main_menu.active {
     display: block;
@@ -643,6 +656,7 @@ button:hover, a:hover {
     background: white;
     padding: 20px 0 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
   }
   #main_menu li {
     display: block;

@@ -40,6 +40,8 @@ header {
     margin-left: 6px;
     @include max-tablet {
         display: none;
+        top: 0;
+        transition: all 1s ease;
         &.active {
             display: block;
             top: 59px;
@@ -50,6 +52,7 @@ header {
             background: white;
             padding: 20px 0 0;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
+            transition: all 1s ease;
         }
     }
     li {
@@ -152,4 +155,9 @@ nav {
 svg {
     fill:#780095;
     height: 23px;
+    transform: rotate(90deg);
+}
+
+#hamburger_menu {
+    transform: rotate(0);
 }
