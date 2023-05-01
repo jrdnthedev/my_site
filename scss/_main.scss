@@ -42,7 +42,7 @@ figure {
 }
 
 #learning {
-    #slide_container {
+    .slide_container {
         display: block;
         flex-direction: unset;
     }
@@ -109,7 +109,7 @@ figure {
     padding-left: 16px;
 }
 
-#slide_container {
+.slide_container {
     flex-direction: column;
     display: flex;
     height: 251px;

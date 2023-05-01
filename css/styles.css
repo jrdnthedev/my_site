@@ -122,11 +122,10 @@ nav {
 svg {
   fill: #780095;
   height: 23px;
-  transform: rotate(90deg);
 }
 
-#hamburger_menu {
-  transform: rotate(0);
+.main-image-controls-container svg {
+  transform: rotate(90deg);
 }
 
 figure {
@@ -172,7 +171,7 @@ figure figcaption {
   background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 0.01) 1%, #f8f8f8 100%);
 }
 
-#learning #slide_container {
+#learning .slide_container {
   display: block;
   flex-direction: unset;
 }
@@ -227,12 +226,12 @@ figure figcaption {
   padding-left: 16px;
 }
 
-#slide_container {
+.slide_container {
   flex-direction: column;
   display: flex;
   height: 251px;
 }
-#slide_container nav#background_nav {
+.slide_container nav#background_nav {
   flex-direction: column;
 }
 
@@ -480,18 +479,18 @@ button:hover, a:hover {
   display: inline-block;
   margin-left: 5px;
 }
-.main-container main .main_section-featured #slide_container {
+.main-container main .main_section-featured .slide_container {
   flex-direction: column;
 }
-.main-container main .main_section-featured #slide_container #slide-content h3 {
+.main-container main .main_section-featured .slide_container #slide-content h3 {
   font-size: 36px;
 }
-.main-container main .main_section-featured #slide_container span {
+.main-container main .main_section-featured .slide_container span {
   flex: 1;
   vertical-align: middle;
   font-weight: 600;
 }
-.main-container main .main_section-featured #slide_container #featured_controls {
+.main-container main .main_section-featured .slide_container #featured_controls {
   display: flex;
   align-items: center;
 }
@@ -593,10 +592,10 @@ button:hover, a:hover {
   .main-image-controls-container nav ul li {
     display: block;
   }
-  #slide_container {
+  .slide_container {
     flex-direction: row;
   }
-  #slide_container nav#background_nav {
+  .slide_container nav#background_nav {
     display: block;
   }
   #slide_content h3 {

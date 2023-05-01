@@ -157,9 +157,8 @@ nav {
 svg {
     fill:#780095;
     height: 23px;
-    transform: rotate(90deg);
 }
 
-#hamburger_menu {
-    transform: rotate(0);
+.main-image-controls-container svg {
+    transform: rotate(90deg);
 }
