@@ -67,7 +67,6 @@
         }
     }
     next.addEventListener('click', function (){
-        console.log('next clicked!');
         if (slide === itemLength) {
             slide = 0;
         } else {
@@ -77,7 +76,6 @@
     });
 
     previous.addEventListener('click', function (){
-        console.log('previous clicked!');
         if (slide === 0) {
             slide = itemLength;
         } else {
