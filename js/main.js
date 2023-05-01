@@ -36,7 +36,7 @@
 
     function sticky () {
         let bar = document.getElementById('sticky_nav');
-        let pm = document.getElementById('primary_nav');
+        let pm = document.getElementById('header');
 
         if(window.innerWidth >= 767) {
             if(window.scrollY >= 95) {

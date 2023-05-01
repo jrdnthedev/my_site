@@ -20,6 +20,12 @@ p {
 .center-align {
   text-align: center;
 }
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
 header h1 {
   margin: 0;
 }
@@ -28,7 +34,9 @@ header p.headline-intro {
   background-color: #c0392b;
   margin: 0;
 }
-header .header-wrapper nav {
+header .header-wrapper {
+  display: flex;
+  align-items: center;
   padding: 1rem 2rem;
 }
 header .page_title {
@@ -94,10 +102,6 @@ header .page_title a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: all 0.5s ease;
-}
-
-#primary_nav {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -549,6 +553,10 @@ button:hover, a:hover {
   .sub-headline {
     font-size: 3.5rem;
   }
+  header {
+    flex-direction: row;
+    height: 100px;
+  }
   #sticky_nav.active {
     display: flex;
     position: fixed;
@@ -632,10 +640,15 @@ button:hover, a:hover {
   }
 }
 @media (max-width: 767px){
-  header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  header.active {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    right: 10px;
+    left: 10px;
+    z-index: 1;
   }
-  header .header-wrapper nav {
+  header .header-wrapper {
     background-color: white;
   }
   header .page_title {
@@ -657,19 +670,12 @@ button:hover, a:hover {
     padding: 20px 0 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 1s ease;
+    z-index: 1;
   }
   #main_menu li {
     display: block;
     text-align: center;
     margin-bottom: 20px;
-  }
-  #primary_nav.active {
-    display: flex;
-    position: fixed;
-    top: 0px;
-    right: 10px;
-    left: 10px;
-    z-index: 1;
   }
   .social_links {
     display: inline-block;
