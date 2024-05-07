@@ -128,6 +128,68 @@ svg {
   transform: rotate(90deg);
 }
 
+#hamburger_menu {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+#hamburger_menu div {
+  width: 100%;
+  height: 3px;
+  background-color: #780095;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s;
+}
+#hamburger_menu.active #top {
+  transform: rotate(45deg) translate(3px, 2px);
+}
+#hamburger_menu.active #bottom {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+#hamburger_menu #top {
+  top: 40%;
+}
+#hamburger_menu #bottom {
+  top: 60%;
+}
+
+#hamburger_link {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  z-index: 2;
+  position: relative;
+}
+
+#mobile_navigation {
+  position: fixed;
+  background: white;
+  margin: 0;
+  top: 76px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.8s ease all;
+  transform: translateY(-100px);
+  padding: 1rem;
+  visibility: hidden;
+  height: calc(100vh - 76px);
+  text-align: left;
+}
+#mobile_navigation.active {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+}
+
+.scroll-lock {
+  overflow-y: hidden;
+}
+
 figure {
   margin: 0 0 1rem;
 }
@@ -181,7 +243,8 @@ figure figcaption {
   margin-top: 150px;
   text-align: center;
 }
-#learning .main-image-controls-container h3, #learning .main-image-controls-container #slide_content #headline_wrapper {
+#learning .main-image-controls-container h3,
+#learning .main-image-controls-container #slide_content #headline_wrapper {
   width: auto;
   max-width: initial;
 }
@@ -229,7 +292,6 @@ figure figcaption {
 .slide_container {
   flex-direction: column;
   display: flex;
-  height: 251px;
 }
 .slide_container nav#background_nav {
   flex-direction: column;
@@ -659,17 +721,27 @@ button:hover, a:hover {
     transition: all 1s ease;
   }
   #main_menu.active {
-    display: block;
-    top: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     margin: 0;
-    position: absolute;
+    position: fixed;
     background: white;
     padding: 20px 0 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 1s ease;
     z-index: 1;
+  }
+  #main_menu a {
+    font-size: 20px;
+    margin-right: unset;
+  }
+  #main_menu li {
+    margin-bottom: 40px;
   }
   #main_menu li {
     display: block;
